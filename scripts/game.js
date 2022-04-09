@@ -226,18 +226,15 @@ function changeTileColor(){
 }
 
 //game over and reset game functionality
-const modalContainer = document.getElementById('gameOver');
-
-const modal = document.createElement("div");
-modal.setAttribute('id','modal');
-modalContainer.appendChild(modal);
-
 const resetBtn = document.createElement("button");
 resetBtn.innerHTML = "Start New Game";
 resetBtn.addEventListener("click", resetGame);
 
 function gameOverModal(gameOverTxt){
-    modalContainer.style.display = "flex";
+    const modal = document.createElement("div");
+    modal.setAttribute('id','modal');
+    letters.innerHTML = "";
+    letters.appendChild(modal);
     modal.innerHTML = gameOverTxt;
     modal.appendChild(resetBtn);
 }
