@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Assignment 3 | Wordle</title>
-        <link rel="stylesheet" href="css/styles.css"/>
-        <script src="scripts/game.js"></script>
+        <title>Assignment 4 | Wordle</title>
+        <link rel="stylesheet" href="css/styles.css"/>  
     </head>
 
     <body>
         <!-- game title -->
-        <h1>eldorw</h1>
+        <h1>eldrow</h1>
 
         <!-- main div -->
         <div id="main">
-            <!-- guesses and input container -->
-            <div id="guesses"></div>
-            <!-- letters -->
-            <div id="letters"></div>
+            <!-- dev mode -->
+            <div id="dev"></div>
+
+            <!-- this is where the words go -->
+            <div id="gameBoard"></div>
+
+            <!-- feedback for player -->
+            <div id="feedback"></div>
+
+            <!-- this is where the alphabet goes -->
+            <div id="alphabet"></div>
         </div>
+
+        <!-- dev mode -->
+        <div id="options"></div>
+
+        <!-- game over modal -->
+        <div id="gameOver"></div>
+
+        <script src="scripts/game.js"></script>
     </body>
 </html>
