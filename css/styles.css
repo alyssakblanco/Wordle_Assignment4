@@ -34,6 +34,12 @@ h1{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+
+#dev{
+   position: absolute;
+   top: 1vw;
 }
 
 #gameBoard {
@@ -68,7 +74,7 @@ h1{
     border: none;
     color: #ffffff;
     background-color: var(--darkGreen);
-    margin: 4px;
+    margin: 0.5vh;
 }
 #check, #delete{
     width: 30% !important;
@@ -116,15 +122,29 @@ h1{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
 }
 #modal{
-    width: 50%;
-    height: 50%;
-    background-color: black;
+    width: 70vw;
+    height: 24vh;
+    background-color: white;
+    margin-top: 54vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
+    color: var(--darkGreen);
+    font-size: 1rem;
+    font-weight: bold;
+}
+#modal button{
+    width: 25vw;
+    height: 3rem;
+    background-color: var(--darkGreen);
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 15px;
+    margin-top: 2rem;
 }

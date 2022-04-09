@@ -33,7 +33,7 @@ answer.innerHTML = wordle;
 
 const dev = document.getElementById('dev');
 let isDev = "OFF";
-dev.appendChild(answer);
+dev.append(answer);
 
 const btn = document.createElement("button");
 btn.innerHTML = "Dev mode: " + isDev;
@@ -46,7 +46,7 @@ function devMode(){
     if(currentRow == 0 && currentTile == 0){
         if(isDev == "OFF"){
             isDev = "ON";
-            answer.style.display = "block";
+            answer.style.display = "inline";
             btn.innerHTML = "Dev mode: " + isDev;
         }else{
             isDev = "OFF";
